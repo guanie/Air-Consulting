@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="253dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Name"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/work_sans_regular"
+        android:text="Type"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Location"
+        android:textColor="#000000"
+        android:fontFamily="@font/work_sans_regular"
+        app:layout_constraintStart_toStartOf="@+id/tvType"
+        app:layout_constraintTop_toBottomOf="@+id/tvType" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Price"
+        android:textColor="#000000"
+        android:fontFamily="@font/work_sans_regular"
+        app:layout_constraintStart_toStartOf="@+id/tvType"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+
+    <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="About"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvPrice"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+
+    <TextView
+        android:id="@+id/tvBlurb"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/work_sans_regular"
+        android:text="Blurb"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAbout"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbout" />
+
+    <TextView
+        android:id="@+id/tvThoughts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Thoughts"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tvBlurb"
+        app:layout_constraintTop_toBottomOf="@+id/tvBlurb" />
+
+    <TextView
+        android:id="@+id/tvComments"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/work_sans_regular"
+        android:text="Comments"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/tvThoughts"
+        app:layout_constraintTop_toBottomOf="@+id/tvThoughts" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/work_sans_regular"
+        android:text="Address"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/ivAddress"
+        app:layout_constraintTop_toTopOf="@+id/ivAddress" />
+
+    <TextView
+        android:id="@+id/tvWebsite"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/work_sans_regular"
+        android:text="Website"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/ivWeb"
+        app:layout_constraintTop_toTopOf="@+id/ivWeb" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/work_sans_regular"
+        android:text="Phone"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/ivPhone"
+        app:layout_constraintTop_toTopOf="@+id/ivPhone" />
+
+    <ImageView
+        android:id="@+id/ivAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/tvComments"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/outline_place_black_24dp" />
+
+    <ImageView
+        android:id="@+id/ivPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="24dp"
+        app:layout_constraintStart_toStartOf="@+id/ivWeb"
+        app:layout_constraintTop_toBottomOf="@+id/ivWeb"
+        app:srcCompat="@drawable/outline_call_black_24dp" />
+
+    <ImageView
+        android:id="@+id/ivWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/ivAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+        app:srcCompat="@drawable/outline_public_black_24dp" />
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Rating"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvName" />
+
+    <View
+        android:id="@+id/view"
+        style="@style/Divider"
+        android:layout_width="345dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/tvComments"
+        app:layout_constraintTop_toBottomOf="@+id/tvComments" />
+
+    <RatingBar
+        android:id="@+id/rbRating"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:rating="5"
+        android:stepSize="0.5"
+        app:layout_constraintEnd_toEndOf="@+id/tvRating"
+        app:layout_constraintTop_toBottomOf="@+id/tvRating" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

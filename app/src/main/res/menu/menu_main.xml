@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/outline_sort_black_24dp"
+        android:title="Sort"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:title="Rating: Low to High"
+                android:id="@+id/sort_rating_low" />
+            <item
+                android:title="Rating: High to Low"
+                android:id="@+id/sort_rating_high" />
+            <item
+                android:title="Price: Low to High"
+                android:id="@+id/sort_price_low" />
+            <item
+                android:title="Price: High to Low"
+                android:id="@+id/sort_price_high" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.SearchView" />
+</menu>
